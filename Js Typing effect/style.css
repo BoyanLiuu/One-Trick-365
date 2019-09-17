@@ -1,0 +1,35 @@
+body{
+    font-family: sans-serif;
+}
+.intro{
+    display:flex;
+    color:white;
+    height:100vh;
+    background: url('image1.jpg');
+    background-size: cover;
+}
+/* this is for typing effect */
+.typing{
+    margin-left: 10px;
+    position:relative;
+}
+/* This is that blinking typing bar */
+.typing::after {
+    content:"";
+    position: absolute;
+    right: -5px;
+    top:7px;
+    width: 1px;
+    height:6%;
+    border-right:2px solid white;
+    animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
